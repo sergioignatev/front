@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+
+  
+  table,th,td,tr{
+    border:1px solid black;
+padding: 10px;
+border-collapse: collapse;
+}
+body{margin-left: 100px;}
+input{margin:1px;}
+</style>
+<body>
+  <input value="http://localhost:8080/api/organization/getAll " type="text" id="input">
+  <button onclick="receive()">Получить</button>
+  <table id="users"></table>
+  <h1 >INPUT</h1>
+  <div class="form">
+    <label for="address">address:</label>
+     <input type="text" id="address"><br>
+     
+     <label for="email">email:</label>
+     <input type="email" id="email"><br>
+     
+     <label for="inn">inn:</label>
+ <input type="text" id="inn"><br>
+ 
+ <label for="kpp">kpp:</label>
+ <input type="text" id="kpp"><br>
+ 
+ <label for="name">name:</label>
+ <input type="text" id="name">
+ <button>Отправить</button>
+   </div>
+  <table id="demo">
+    <th>Name</th>
+    <th>Address</th>
+    <th>Email</th>
+    <th>Inn</th>
+    <th>Kpp</th>
+  </table>
+</body>
+
+<script src="scripts/script.js"></script>
+<script src="scripts/push.js"></script>
+</html>
